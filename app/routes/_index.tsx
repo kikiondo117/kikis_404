@@ -1,20 +1,4 @@
-// export function headers({
-//   loaderHeaders,
-//   parentHeaders,
-// }: {
-//   loaderHeaders: Headers;
-//   parentHeaders: Headers;
-// }) {
-//   console.log(
-//     "This is an example of how to set caching headers for a route, feel free to change the value of 60 seconds or remove the header"
-//   );
-//   return {
-//     // This is an example of how to set caching headers for a route
-//     // For more info on headers in Remix, see: https://remix.run/docs/en/v1/route/headers
-//     "Cache-Control": "public, max-age=60, s-maxage=60",
-//   };
-// }
-
+import { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import {
   FaInstagram,
@@ -23,6 +7,25 @@ import {
   FaSoundcloud,
   FaFacebook,
 } from "react-icons/fa/index.js";
+import Particles from "@tsparticles/react";
+import { useCallback } from "react";
+
+export function headers({
+  loaderHeaders,
+  parentHeaders,
+}: {
+  loaderHeaders: Headers;
+  parentHeaders: Headers;
+}) {
+  console.log(
+    "This is an example of how to set caching headers for a route, feel free to change the value of 60 seconds or remove the header"
+  );
+  return {
+    // This is an example of how to set caching headers for a route
+    // For more info on headers in Remix, see: https://remix.run/docs/en/v1/route/headers
+    "Cache-Control": "public, max-age=60, s-maxage=60",
+  };
+}
 
 export default function Index() {
   return (
@@ -43,10 +46,13 @@ export default function Index() {
         <li>Contacto</li>
       </ul>
 
-      <img
-        className="mx-auto w-[80vw] h-[50vh] max-w-xl mt-4 md:w-full md:mt-8 "
-        src="https://media4.giphy.com/media/Y5pJPmh9IWMKc/giphy.gif?cid=ecf05e47g00wtm9zxrl7xq6kay1otzdus9ljhqioxvfp38q6&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-      ></img>
+      <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative">
+        <img
+          className="w-full h-full object-cover "
+          src="/imgs/kikis_logo.JPEG"
+          alt="kikis 404"
+        />
+      </div>
 
       <div className="flex justify-center items-center gap-4 mt-4">
         <Link target="_blank" to="https://www.tiktok.com/@kikis_404">
