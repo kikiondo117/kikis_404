@@ -22,12 +22,26 @@ export const meta: MetaFunction = () => [
   {
     charset: "utf-8",
     title: "KIKIS 404",
-    description: "Informacion de kikis 404, mercancia y agenda",
-    "og:title": "KIKIS 404",
-    "og:description": "Mercancia, agenda , DJ Sets y más..",
-    "og:image": "https://kikis404.com/imgs/kikis_logo.JPEG",
-    "og:url": "https://www.kikis404.com",
-    "og:type": "website",
+  },
+  {
+    property: "og:title",
+    content: "KIKIS 404",
+  },
+  {
+    property: "og:description",
+    content: "Mercancia, agenda , DJ Sets y más..",
+  },
+  {
+    property: "og:image",
+    content: "https://kikis404.com/imgs/kikis_logo.JPEG",
+  },
+  {
+    property: "og:url",
+    content: "https://www.kikis404.com",
+  },
+  {
+    name: "description",
+    content: "Informacion de kikis 404, mercancia y agenda",
   },
   {
     name: "viewport",
