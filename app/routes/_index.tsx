@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { Menu } from "~/components/common/Menu/Menu";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
 
 export default function Index() {
@@ -13,21 +14,7 @@ export default function Index() {
         </h1>
       </Link>
 
-      <ul className="flex justify-center gap-2 mt-4 text-base font-barlow-extralight uppercase">
-        <li>
-          <Link to="/store">Mercancia</Link>
-        </li>
-        <li>|</li>
-
-        <li>
-          <Link to="/sets">DJ Sets</Link>
-        </li>
-        <li>|</li>
-        <li>
-          {" "}
-          <Link to="/store">Contacto</Link>
-        </li>
-      </ul>
+      <Menu />
 
       <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
         <img

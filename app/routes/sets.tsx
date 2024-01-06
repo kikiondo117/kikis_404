@@ -1,4 +1,5 @@
 import { Link, Links } from "@remix-run/react";
+import { Menu } from "~/components/common/Menu/Menu";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
 
 export default function Sets() {
@@ -13,21 +14,7 @@ export default function Sets() {
         </h1>
       </Link>
 
-      <ul className="flex justify-center gap-2 mt-4 text-base font-barlow-extralight uppercase">
-        <li>
-          <Link to="/store">Mercancia</Link>
-        </li>
-        <li>|</li>
-
-        <li>
-          <Link to="/sets">DJ Sets</Link>
-        </li>
-        <li>|</li>
-        <li>
-          {" "}
-          <Link to="/store">Contacto</Link>
-        </li>
-      </ul>
+      <Menu />
 
       <SocialMedia />
 
@@ -47,7 +34,10 @@ export default function Sets() {
           <img className=" h-full" src="/imgs/kikis_social_media.png" alt="" />
         </Link>
         <Link to="/" className="md:w-64 w-60 h-60">
-          <img className=" h-full" src="/imgs/kikis_logo.JPEG" alt="" />
+          <img className=" h-full" src="/imgs/sets/ghost.png" alt="" />
+        </Link>
+        <Link to="/" className="md:w-64 w-60 h-60">
+          <img className=" h-full" src="/imgs/sets/ghost_white.png" alt="" />
         </Link>
       </section>
     </main>
