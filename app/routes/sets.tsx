@@ -1,7 +1,7 @@
-import { Link } from "@remix-run/react";
+import { Link, Links } from "@remix-run/react";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
 
-export default function Index() {
+export default function Sets() {
   return (
     <main
       className="container mt-20  mx-auto text-white"
@@ -29,15 +29,19 @@ export default function Index() {
         </li>
       </ul>
 
-      <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
-        <img
-          className="w-full h-full object-cover "
-          src="/imgs/kikis_logo.JPEG"
-          alt="kikis 404"
-        />
-      </div>
-
       <SocialMedia />
+
+      <section className="flex flex-col gap-4 items-center md:gap-0 md:flex-row justify-center mt-12 flex-wrap">
+        <Link to="/" className="md:w-64 w-60 h-60">
+          <img src="/imgs/kikis_2_black.png" alt="" />
+        </Link>
+        <Link to="/" className="md:w-64 w-60 h-60">
+          <img className=" h-full" src="/imgs/kikis_social_media.png" alt="" />
+        </Link>
+        <Link to="/" className="md:w-64 w-60 h-60">
+          <img className=" h-full" src="/imgs/kikis_logo.JPEG" alt="" />
+        </Link>
+      </section>
     </main>
   );
 }

@@ -7,3 +7,7 @@
     });
 
 ```
+
+### Type
+
+- Atomic Marker

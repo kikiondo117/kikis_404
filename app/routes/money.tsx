@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { CopyButton } from "~/components/common/CopyButton./CopyButton";
+import { CopyButton } from "~/components/common/CopyButton/CopyButton";
 
 export default function Money() {
   return (
