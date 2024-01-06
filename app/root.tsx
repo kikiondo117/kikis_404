@@ -25,6 +25,14 @@ export const meta: MetaFunction = () => [
     title: "KIKIS 404",
   },
   {
+    property: "og:type",
+    content: "article",
+  },
+  {
+    property: "fb:app_id",
+    content: "kikis_404",
+  },
+  {
     property: "og:title",
     content: "KIKIS 404",
   },
