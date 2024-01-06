@@ -14,7 +14,7 @@ export default function Contact() {
 
       <Menu />
 
-      <section className="mt-8">
+      <section className="mt-8 px-8">
         <p className="font-barlow-medium text-center text-3xl md:text-4xl">
           ¿Te gustaria aganedar para un evento?
         </p>
