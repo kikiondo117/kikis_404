@@ -84,7 +84,7 @@ export function ErrorBoundary() {
       >
         <main className="container mx-auto">
           <h1 className="mt-20  text-center text-3xl md:text-5xl">404</h1>
-          <p className="text-center mt-4 font-barlow-thin">
+          <p className="text-center mt-4 font-barlow-thin px-4">
             Parece que no se encuentra disponible esta pagina de momento.
             <br />
             Esperemos que en un futuro la podamos ver, resiste un poco más u.u

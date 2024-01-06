@@ -42,7 +42,7 @@ export default function Index() {
         />
       </div>
 
-      <div className="flex justify-center items-center gap-4 mt-4 text-xl">
+      <div className="flex justify-center items-center gap-5 mt-4 text-xl">
         <Link target="_blank" to="https://www.tiktok.com/@kikis_404">
           <FaTiktok />
         </Link>
