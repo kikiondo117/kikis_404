@@ -62,6 +62,20 @@ export const meta: MetaFunction = () => [
 ];
 
 export default function App() {
+  /**!SEGMENT SECTION */
+  useEffect(() => {
+    // @ts-ignore
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      // @ts-ignore
+      dataLayer.push(arguments);
+    }
+    // @ts-ignore
+    gtag("js", new Date());
+    // @ts-ignore
+    gtag("config", "G-DCWKJY1429");
+  }, []);
 
   return (
     <html lang="en">
@@ -81,18 +95,8 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-
         {/* SEGMENT SNIPPET */}
         <script dangerouslySetInnerHTML={{ __html: renderSegmentSnippet() }} />
-        {/* GOOGLE SNIPPET */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCWKJY1429"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-DCWKJY1429');
-        </script>
 
         <LiveReload />
       </body>
