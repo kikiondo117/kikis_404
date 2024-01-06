@@ -1,5 +1,6 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -57,13 +58,56 @@ export default function App() {
         <Links />
       </head>
       <body
-        className="bg-black"
+        className="bg-black text-white"
         style={{ fontFamily: "Barlow, sans-serif", lineHeight: "1.4" }}
       >
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+      </body>
+    </html>
+  );
+}
+
+export function ErrorBoundary() {
+  return (
+    <html>
+      <head>
+        <title>Oops!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body
+        style={{ fontFamily: "Barlow, sans-serif", lineHeight: "1.4" }}
+        className=" bg-black text-white"
+      >
+        <main className="container mx-auto">
+          <h1 className="mt-20  text-center text-3xl md:text-5xl">404</h1>
+          <p className="text-center mt-4 font-barlow-thin">
+            Parece que no se encuentra disponible esta pagina de momento.
+            <br />
+            Esperemos que en un futuro la podamos ver, resiste un poco más u.u
+          </p>
+          <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
+            <img
+              className="w-full h-full object-cover "
+              src="/imgs/kikis_logo.JPEG"
+              alt="kikis 404"
+            />
+          </div>
+
+          <div className="flex justify-center mt-4">
+            <Link
+              className=" border-solid border-2 text-white px-4  py-2 rounded-md"
+              to="/"
+            >
+              Regresar
+            </Link>
+          </div>
+        </main>
+
+        <Scripts />
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaSoundcloud,
   FaFacebook,
+  FaMoneyBill,
 } from "react-icons/fa/index.js";
 
 export default function Index() {
@@ -18,12 +19,19 @@ export default function Index() {
       </h1>
 
       <ul className="flex justify-center gap-2 mt-4 text-base font-barlow-extralight uppercase">
-        <li>Mercancia</li>
+        <li>
+          <Link to="/store">Mercancia</Link>
+        </li>
         <li>|</li>
 
-        <li>DJ Sets</li>
+        <li>
+          <Link to="/store">DJ Sets</Link>
+        </li>
         <li>|</li>
-        <li>Contacto</li>
+        <li>
+          {" "}
+          <Link to="/store">Contacto</Link>
+        </li>
       </ul>
 
       <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
@@ -34,7 +42,7 @@ export default function Index() {
         />
       </div>
 
-      <div className="flex justify-center items-center gap-4 mt-4">
+      <div className="flex justify-center items-center gap-4 mt-4 text-xl">
         <Link target="_blank" to="https://www.tiktok.com/@kikis_404">
           <FaTiktok />
         </Link>
@@ -52,6 +60,9 @@ export default function Index() {
           to="https://www.facebook.com/profile.php?id=100091625584896&locale=hi_IN&paipv=0&eav=AfbnfA3-e4qPmS4T2HnoCt09wx51P97MNAB8B2432AwYUMzpeFjLaca7Wabon6rq_LY"
         >
           <FaFacebook />
+        </Link>
+        <Link to="/money">
+          <FaMoneyBill />
         </Link>
       </div>
     </main>
