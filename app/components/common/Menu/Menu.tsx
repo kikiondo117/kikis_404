@@ -3,7 +3,7 @@ import { Link } from "@remix-run/react";
 export function Menu() {
   const segmentMenuTrack = (section: string) => {
     analytics.track("Menu Click", {
-      menu_section: "Menu",
+      menu_section: section,
     });
   };
 

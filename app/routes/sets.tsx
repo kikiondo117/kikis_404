@@ -1,4 +1,4 @@
-import { Link, Links } from "@remix-run/react";
+import { Link } from "@remix-run/react";
 import { Menu } from "~/components/common/Menu/Menu";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
 
