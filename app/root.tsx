@@ -34,7 +34,7 @@ export const meta: MetaFunction = () => [
   },
   {
     property: "og:image",
-    content: "https://kikis404.com/imgs/kikis_logo.JPEG",
+    content: "https://kikis404.com/imgs/kikis_social_media.png",
   },
   {
     property: "og:url",
