@@ -21,7 +21,7 @@ export default function Index() {
       <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
         <img
           className="w-full h-full object-cover "
-          src="/imgs/kikis_logo.JPEG"
+          src="/imgs/kikis_white.PNG"
           alt="kikis 404"
         />
       </div>
