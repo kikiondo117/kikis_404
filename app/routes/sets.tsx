@@ -14,7 +14,9 @@ export default function Sets() {
         </h1>
       </Link>
 
-      <Menu />
+      <header className="mt-4">
+        <Menu />
+      </header>
 
       <SocialMedia />
 

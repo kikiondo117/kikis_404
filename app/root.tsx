@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 import styles from "./tailwind.css";
 import globalStyles from "./global.css";
+import { BackButton } from "./components/common/BackButton/Backbutton";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -106,12 +107,7 @@ export function ErrorBoundary() {
           </div>
 
           <div className="flex justify-center mt-4">
-            <Link
-              className=" border-solid border-2 text-white px-4  py-2 rounded-md"
-              to="/"
-            >
-              Regresar
-            </Link>
+            <BackButton />
           </div>
         </main>
 

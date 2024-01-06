@@ -14,7 +14,9 @@ export default function Index() {
         </h1>
       </Link>
 
-      <Menu />
+      <header className="mt-4">
+        <Menu />
+      </header>
 
       <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
         <img
