@@ -1,21 +1,47 @@
 import { Link } from "@remix-run/react";
 
 export function Menu() {
+  const segmentMenuTrack = (section: string) => {
+    analytics.track("Menu Click", {
+      menu_section: "Menu",
+    });
+  };
+
   return (
     <nav>
       <ul className="flex justify-center gap-2  text-base font-barlow-extralight uppercase">
         <li>
-          <Link to="/store">Mercancia</Link>
+          <Link
+            onClick={() => {
+              segmentMenuTrack("Mercancia");
+            }}
+            to="/store"
+          >
+            Mercancia
+          </Link>
         </li>
         <li>|</li>
 
         <li>
-          <Link to="/sets">DJ Sets</Link>
+          <Link
+            onClick={() => {
+              segmentMenuTrack("DJ Sets");
+            }}
+            to="/sets"
+          >
+            DJ Sets
+          </Link>
         </li>
         <li>|</li>
         <li>
-          {" "}
-          <Link to="/contact">Contacto</Link>
+          <Link
+            onClick={() => {
+              segmentMenuTrack("Contact");
+            }}
+            to="/contact"
+          >
+            Contacto
+          </Link>
         </li>
       </ul>
     </nav>

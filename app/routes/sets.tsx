@@ -33,13 +33,21 @@ export default function Sets() {
           to="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=1609s"
           className="md:w-64 w-60 h-60"
         >
-          <img className=" h-full" src="/imgs/kikis_social_media.png" alt="" />
+          <img
+            className="w-full h-full"
+            src="/imgs/kikis_social_media.png"
+            alt=""
+          />
         </Link>
         <Link to="/" className="md:w-64 w-60 h-60">
-          <img className=" h-full" src="/imgs/sets/ghost.png" alt="" />
+          <img className="w-full h-full" src="/imgs/sets/ghost.png" alt="" />
         </Link>
         <Link to="/" className="md:w-64 w-60 h-60">
-          <img className=" h-full" src="/imgs/sets/ghost_white.png" alt="" />
+          <img
+            className="w-full h-full"
+            src="/imgs/sets/ghost_white.png"
+            alt=""
+          />
         </Link>
       </section>
     </main>
