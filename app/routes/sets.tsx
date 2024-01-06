@@ -32,10 +32,18 @@ export default function Sets() {
       <SocialMedia />
 
       <section className="flex flex-col gap-4 items-center md:gap-0 md:flex-row justify-center mt-12 flex-wrap">
-        <Link to="/" className="md:w-64 w-60 h-60">
+        <Link
+          target="_blank"
+          to="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          className="md:w-64 w-60 h-60"
+        >
           <img src="/imgs/kikis_2_black.png" alt="" />
         </Link>
-        <Link to="/" className="md:w-64 w-60 h-60">
+        <Link
+          target="_blank"
+          to="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=1609s"
+          className="md:w-64 w-60 h-60"
+        >
           <img className=" h-full" src="/imgs/kikis_social_media.png" alt="" />
         </Link>
         <Link to="/" className="md:w-64 w-60 h-60">
