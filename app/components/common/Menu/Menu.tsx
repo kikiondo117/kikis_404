@@ -16,7 +16,8 @@ export function Menu() {
             onClick={() => {
               segmentMenuTrack("Mercancia");
             }}
-            to="/store"
+            to="https://www.amazon.com.mx/"
+            target="_blank"
           >
             Mercancia
           </Link>

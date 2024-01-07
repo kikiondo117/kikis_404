@@ -78,7 +78,6 @@ export default function App() {
 
     document.body.appendChild(script);
 
-    // Limpieza al desmontar el componente
     return () => {
       document.body.removeChild(script);
     };
