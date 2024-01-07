@@ -1,8 +1,4 @@
-import type {
-  LinksFunction,
-  LoaderFunction,
-  MetaFunction,
-} from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -10,12 +6,11 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  json,
 } from "@remix-run/react";
 import styles from "./tailwind.css";
 import globalStyles from "./global.css";
 import { BackButton } from "./components/common/BackButton/Backbutton";
-import { Analytics } from "@segment/analytics-node";
+
 import { useEffect } from "react";
 
 export const links: LinksFunction = () => [
@@ -65,18 +60,20 @@ export const meta: MetaFunction = () => [
   },
 ];
 
+//  @ts-ignore
+
 export default function App() {
   // * Segment Configuration
   useEffect(() => {
-    // Esta función se ejecuta solo en el navegador
     const script = document.createElement("script");
     script.src =
       "https://cdn.segment.com/analytics.js/v1/8FRB6yEFpo8At9HTJBxwPod6WNFDD0EX/analytics.min.js";
     script.async = true;
     script.onload = () => {
-      // Configura Segment una vez que el script se haya cargado
-      window.analytics.load("8FRB6yEFpo8At9HTJBxwPod6WNFDD0EX");
-      window.analytics.page();
+      if (window.analytics) {
+        window.analytics.load("8FRB6yEFpo8At9HTJBxwPod6WNFDD0EX");
+        window.analytics.page();
+      }
     };
 
     document.body.appendChild(script);
