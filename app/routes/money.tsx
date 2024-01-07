@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { BackButton } from "~/components/common/BackButton/Backbutton";
 import { CopyButton } from "~/components/common/CopyButton/CopyButton";
 
 export default function Money() {
@@ -28,12 +29,7 @@ export default function Money() {
       </section>
 
       <div className="flex justify-center mt-4">
-        <Link
-          className=" border-solid border-2 text-white px-4  py-2 rounded-md"
-          to="/"
-        >
-          Regresar
-        </Link>
+        <BackButton />
       </div>
     </main>
   );

@@ -23,10 +23,8 @@ export default function Contact() {
         </p>
 
         <p className="mx-auto text-center max-w-xl mt-8">
-          información Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-          doloribus animi commodi sunt molestiae, non numquam quibusdam,
-          necessitatibus in amet consequatur quos eligendi at! Magnam harum odit
-          aliquam perspiciatis facere!
+          De momento toda agenda es por medio de whatsapp o por correo
+          electronico.
         </p>
       </section>
     </main>

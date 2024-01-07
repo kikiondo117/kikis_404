@@ -12,7 +12,6 @@ import styles from "./tailwind.css";
 import globalStyles from "./global.css";
 import { BackButton } from "./components/common/BackButton/Backbutton";
 import { renderSegmentSnippet } from "./utils/segment";
-import { useEffect } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -62,31 +61,11 @@ export const meta: MetaFunction = () => [
 ];
 
 export default function App() {
-  /**!SEGMENT SECTION */
-  useEffect(() => {
-    // @ts-ignore
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      // @ts-ignore
-      dataLayer.push(arguments);
-    }
-    // @ts-ignore
-    gtag("js", new Date());
-    // @ts-ignore
-    gtag("config", "G-DCWKJY1429");
-  }, []);
-
   return (
     <html lang="en">
       <head>
         <Meta />
         <Links />
-
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-DCWKJY1429"
-        ></script>
       </head>
       <body
         className="bg-black text-white"
