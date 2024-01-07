@@ -18,12 +18,10 @@ export default function Index() {
         <Menu />
       </header>
 
-      <div className="mx-auto w-[300px] h-[50vh] max-w-xl mt-4 md:mt-8 relative ">
-        <img
-          className="w-full h-full object-cover "
-          src="/imgs/kikis_white.PNG"
-          alt="kikis 404"
-        />
+      <div className="mx-auto w-[300px h-[50vh] max-w-xl mt-2 md:w-[50vw] relative mb-4 ">
+        <video autoPlay loop muted playsInline className="w-full h-full">
+          <source src="/videos/neonanimation.mp4" />
+        </video>
       </div>
 
       <SocialMedia />
