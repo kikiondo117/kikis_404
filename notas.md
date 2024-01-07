@@ -11,3 +11,12 @@
 ### Type
 
 - Atomic Marker
+
+### Datos
+
+Linea para apps frontend
+
+```
+        {/* SEGMENT SNIPPET */}
+        {/* <script dangerouslySetInnerHTML={{ __html: renderSegmentSnippet() }} /> */}
+```

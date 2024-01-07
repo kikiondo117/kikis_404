@@ -1,17 +1,22 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  LoaderFunction,
+  MetaFunction,
+} from "@remix-run/node";
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  json,
 } from "@remix-run/react";
 import styles from "./tailwind.css";
 import globalStyles from "./global.css";
 import { BackButton } from "./components/common/BackButton/Backbutton";
-import { renderSegmentSnippet } from "./utils/segment";
+import { Analytics } from "@segment/analytics-node";
+import { useEffect } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -61,6 +66,27 @@ export const meta: MetaFunction = () => [
 ];
 
 export default function App() {
+  // * Segment Configuration
+  useEffect(() => {
+    // Esta función se ejecuta solo en el navegador
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.segment.com/analytics.js/v1/8FRB6yEFpo8At9HTJBxwPod6WNFDD0EX/analytics.min.js";
+    script.async = true;
+    script.onload = () => {
+      // Configura Segment una vez que el script se haya cargado
+      window.analytics.load("8FRB6yEFpo8At9HTJBxwPod6WNFDD0EX");
+      window.analytics.page();
+    };
+
+    document.body.appendChild(script);
+
+    // Limpieza al desmontar el componente
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -74,9 +100,6 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        {/* SEGMENT SNIPPET */}
-        <script dangerouslySetInnerHTML={{ __html: renderSegmentSnippet() }} />
-
         <LiveReload />
       </body>
     </html>
