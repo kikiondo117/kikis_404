@@ -18,7 +18,7 @@ export default function Index() {
         <Menu />
       </header>
 
-      <div className="mx-auto w-[300px h-[50vh] max-w-xl mt-2 md:w-[50vw] relative mb-4 ">
+      <div className=" mx-auto w-full h-[50vh] max-w-xl mt-2 md:w-[70vw] relative mb-4 ">
         <video autoPlay loop muted playsInline className="w-full h-full">
           <source src="/videos/neonanimation.mp4" />
         </video>
