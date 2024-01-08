@@ -41,11 +41,11 @@ export default function Sets() {
       </section>
 
       <section className="mt-8 mb-16">
-        <h2 className="text-center text-4xl md:text-5xl font-barlow-medium">
-          LIVE
+        <h2 className="text-center text-4xl md:text-5xl font-barlow-thin">
+          LIVE SESSION
         </h2>
 
-        <p className="mt-4 md:mt-8 text-center text-xl md:text-4xl">
+        <p className="mt-4 md:mt-8 text-center text-xl md:text-4xl font-barlow-medium">
           Proximo Set en vivo - 27 / 01 / 2024
         </p>
       </section>
