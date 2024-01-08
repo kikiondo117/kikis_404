@@ -39,6 +39,16 @@ export default function Sets() {
           img="/imgs/sets/ghost_white.png"
         />
       </section>
+
+      <section className="mt-8 mb-16">
+        <h2 className="text-center text-4xl md:text-5xl font-barlow-medium">
+          LIVE
+        </h2>
+
+        <p className="mt-4 md:mt-8 text-center text-xl md:text-4xl">
+          Proximo Set en vivo - 27 / 01 / 2024
+        </p>
+      </section>
     </main>
   );
 }
