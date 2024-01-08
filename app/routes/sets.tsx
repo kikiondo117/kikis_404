@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { Menu } from "~/components/common/Menu/Menu";
+import { SetCard } from "~/components/common/Set/SetCard";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
 
 export default function Sets() {
@@ -21,34 +22,22 @@ export default function Sets() {
       <SocialMedia />
 
       <section className="flex flex-col gap-4 items-center md:gap-0 md:flex-row justify-center mt-12 flex-wrap">
-        <Link
-          target="_blank"
-          to="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
-          className="md:w-64 w-60 h-60"
-        >
-          <img src="/imgs/kikis_2_black.png" alt="" />
-        </Link>
-        <Link
-          target="_blank"
-          to="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=1609s"
-          className="md:w-64 w-60 h-60"
-        >
-          <img
-            className="w-full h-full"
-            src="/imgs/kikis_social_media.png"
-            alt=""
-          />
-        </Link>
-        <Link to="/" className="md:w-64 w-60 h-60">
-          <img className="w-full h-full" src="/imgs/sets/ghost.png" alt="" />
-        </Link>
-        <Link to="/" className="md:w-64 w-60 h-60">
-          <img
-            className="w-full h-full"
-            src="/imgs/sets/ghost_white.png"
-            alt=""
-          />
-        </Link>
+        <SetCard
+          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          img="/imgs/kikis_2_black.png"
+        />
+        <SetCard
+          url="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=1609s"
+          img="/imgs/kikis_social_media.png"
+        />
+        <SetCard
+          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          img="/imgs/sets/ghost.png"
+        />
+        <SetCard
+          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          img="/imgs/sets/ghost_white.png"
+        />
       </section>
     </main>
   );
