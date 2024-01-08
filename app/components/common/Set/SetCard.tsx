@@ -1,6 +1,14 @@
 import { Link } from "@remix-run/react";
 
-export function SetCard({ url, img }: { url: string; img: string }) {
+export function SetCard({
+  url,
+  img,
+  target,
+}: {
+  url: string;
+  img: string;
+  target?: string;
+}) {
   const handleSegmentTrack = (url: string) => {
     // @ts-ignore
     analytics.track("Set video", {
@@ -12,7 +20,7 @@ export function SetCard({ url, img }: { url: string; img: string }) {
   return (
     <Link
       onClick={() => handleSegmentTrack(url)}
-      target="_blank"
+      target={target ?? "_blank"}
       to={url}
       className="md:w-64 w-60 h-60"
     >
