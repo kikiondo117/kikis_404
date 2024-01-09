@@ -40,12 +40,21 @@ export default function Sets() {
         />
       </section>
 
-      <section className="mt-8 mb-16 h-screen flex flex-col items-center justify-center">
+      <section className="mt-8 h-screen flex flex-col items-center justify-center">
         <h2 className="text-center text-4xl md:text-5xl font-barlow-thin">
           LIVE SESSION
         </h2>
 
-        <SetCard target="_self" url="" img="/imgs/sets/ghost2.png" />
+        <div>
+          <iframe
+            className=" w-full h-full md:w-[560px] md:h-[315px]"
+            src="https://www.youtube.com/embed/cc-w0c13tGI?si=RRwR_j6nDGJEoX3C"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <p className="mt-4 md:mt-8 text-center text-xl md:text-4xl font-barlow-medium">
           Proximo Set en vivo - 27 / 01 / 2024
