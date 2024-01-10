@@ -17,6 +17,10 @@ export const meta: MetaFunction = () => {
        Sumérgete en ritmos cautivadores y melodías únicas directamente desde Colima. 
        Escucha ahora y experimenta la magia de la música electrónica.`,
     },
+    {
+      name: "viewport",
+      content: "width=device-width,initial-scale=1",
+    },
   ];
 };
 

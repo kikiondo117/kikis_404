@@ -15,6 +15,10 @@ export const meta: MetaFunction = () => {
       content:
         "Conoce a kikis 404, tu DJ de melodic techno en Colima. Explora mezclas vibrantes y sonidos innovadores para tus fiestas y eventos. ¡Descubre más aquí!",
     },
+    {
+      name: "viewport",
+      content: "width=device-width,initial-scale=1",
+    },
   ];
 };
 
@@ -45,9 +49,12 @@ export default function Contact() {
           vibrante y una atmósfera inolvidable? Estás en el lugar correcto.
         </p>
 
-        <p className="text-center mt-4 text-2xl ">
+        <p className="text-center mt-4 text-xl md:text-2xl ">
           Correo de Contacto:
-          <strong className="text-cyan-400 ml-4">djkikis404@gmail.com</strong>
+        </p>
+
+        <p className=" text-center  text-xl md:text-2xl text-cyan-400">
+          djkikis404@gmail.com
         </p>
       </section>
     </main>
