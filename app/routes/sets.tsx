@@ -23,19 +23,19 @@ export default function Sets() {
 
       <section className="flex flex-col gap-4 items-center md:gap-0 md:flex-row justify-center mt-12 flex-wrap">
         <SetCard
-          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=0s"
           img="/imgs/kikis_2_black.png"
         />
         <SetCard
-          url="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=1609s"
+          url="https://www.youtube.com/watch?v=qrIpKGUNcBM&t=0s"
           img="/imgs/kikis_social_media.png"
         />
         <SetCard
-          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=0s"
           img="/imgs/sets/ghost.png"
         />
         <SetCard
-          url="https://www.youtube.com/watch?v=PnzIhV8AMDU&t=209s"
+          url="https://www.youtube.com/watch?v=cc-w0c13tGI&t=0s"
           img="/imgs/sets/ghost_white.png"
         />
       </section>
