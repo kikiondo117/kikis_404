@@ -1,7 +1,24 @@
+import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { Menu } from "~/components/common/Menu/Menu";
 import { SetCard } from "~/components/common/Set/SetCard";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "kikis 404 Sets" },
+    {
+      property: "og:title",
+      content: "DJ KIKIS 404 - DJ Sets",
+    },
+    {
+      name: "description",
+      content: `Explora la vibrante selección de Melodic Techno de DJ [Tu Nombre] en esta exclusiva colección de sets grabados.
+       Sumérgete en ritmos cautivadores y melodías únicas directamente desde Colima. 
+       Escucha ahora y experimenta la magia de la música electrónica.`,
+    },
+  ];
+};
 
 export default function Sets() {
   return (

@@ -35,20 +35,19 @@ export default function Contact() {
       <Menu />
 
       <section className="mt-8 px-8">
-        <p className="font-barlow-medium text-center text-3xl md:text-4xl">
+        <h2 className="font-barlow-medium text-center text-3xl md:text-4xl">
           ¿Te gustaria aganedar para un evento?
+        </h2>
+
+        <p className="mx-auto text-center max-w-xl mt-8 font-barlow-regular">
+          Bienvenido a la experiencia sonora definitiva en Colima con KIKIS 404,
+          tu experto en Melodic Techno. ¿Buscas elevar tu evento con música
+          vibrante y una atmósfera inolvidable? Estás en el lugar correcto.
         </p>
 
-        <p className="mx-auto text-center max-w-xl mt-8">
-          De momento toda agenda es por medio de whatsapp o por correo
-          electronico:
-        </p>
-        <p className="text-center mt-4 text-2xl text-cyan-400">
-          <strong>djkikis404@gmail.com</strong>
-        </p>
-
-        <p className="text-center mt-4 font-barlow-thin">
-          Para el estado de Colima tenemos promociones especiales.
+        <p className="text-center mt-4 text-2xl ">
+          Correo de Contacto:
+          <strong className="text-cyan-400 ml-4">djkikis404@gmail.com</strong>
         </p>
       </section>
     </main>
