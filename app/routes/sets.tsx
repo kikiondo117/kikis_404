@@ -1,5 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { useEffect } from "react";
 import { Menu } from "~/components/common/Menu/Menu";
 import { SetCard } from "~/components/common/Set/SetCard";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
@@ -25,6 +26,25 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Sets() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.onload = function () {
+      window.voiceflow.chat.load({
+        verify: { projectID: "65b2d0e889b0787e9e090572" },
+        url: "https://general-runtime.voiceflow.com",
+        versionID: "production",
+      });
+    };
+    script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <main
       className="container mt-20  mx-auto text-white"
