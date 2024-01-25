@@ -60,8 +60,6 @@ export const meta: MetaFunction = () => [
   },
 ];
 
-//  @ts-ignore
-
 export default function App() {
   // * Segment Configuration
   useEffect(() => {
@@ -80,6 +78,26 @@ export default function App() {
 
     return () => {
       document.body.removeChild(script);
+    };
+  }, []);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.onload = function () {
+      //  @ts-ignore
+      window.voiceflow.chat.load({
+        verify: { projectID: "65b2d0e889b0787e9e090572" },
+        url: "https://general-runtime.voiceflow.com",
+        versionID: "production",
+      });
+    };
+    script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
     };
   }, []);
 
