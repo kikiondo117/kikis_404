@@ -86,7 +86,7 @@ export default function Set() {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </section>
@@ -94,7 +94,9 @@ export default function Set() {
         {/* ANCHOR DEMO */}
         <section className="flex flex-col md:flex-row md:gap-8 items-center justify-center">
           <div className="order-2">
-            <p className="text-4xl text-center mb-2">Spotify</p>
+            <p className="text-2xl md:text-4xl text-center mb-2">
+              Spotify Play List
+            </p>
 
             <div className="flex justify-center">
               <a
