@@ -861,18 +861,6 @@ video {
     height: 315px;
   }
 
-  .md\:h-\[515px\] {
-    height: 515px;
-  }
-
-  .md\:h-\[615px\] {
-    height: 615px;
-  }
-
-  .md\:h-\[1015px\] {
-    height: 1015px;
-  }
-
   .md\:w-64 {
     width: 16rem;
   }

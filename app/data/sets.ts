@@ -2,7 +2,7 @@ export const sets_data = [
   {
     id: "enero-2024",
     link: "https://www.youtube.com/watch?v=cc-w0c13tGI&t=0s",
-    live_link: "https://www.youtube.com/embed/OA9w38lh_r4?si=lVblj9AIS5cV9Ncd",
+    live_link: "https://www.youtube.com/embed/oVPX2Y3hDfc?si=5HmwXw6xTbGoj8W-",
     img: "/imgs/sets/ghost_white.png",
     date: "Enero - 27 / 01 / 2024",
     tracks: [
