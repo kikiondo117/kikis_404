@@ -1,30 +1,27 @@
-import { Link } from "@remix-run/react";
-
 export function SetCard({
-  url,
+  id,
   img,
-  target,
+  date,
 }: {
-  url: string;
+  id: string;
   img: string;
-  target?: string;
+  date: string;
 }) {
-  const handleSegmentTrack = (url: string) => {
+  const handleSegmentTrack = ({ id }: { id: string }) => {
     // @ts-ignore
     analytics.track("Set video", {
-      video: url,
+      id,
       section: "DJ Sets",
     });
   };
 
   return (
-    <Link
-      onClick={() => handleSegmentTrack(url)}
-      target={target ?? "_blank"}
-      to={url}
+    <div
       className="md:w-64 w-60 h-60"
+      onClick={() => handleSegmentTrack({ id })}
     >
       <img className="w-full h-full" src={img} alt="" />
-    </Link>
+      <p className="py-4 text-center">{date} </p>
+    </div>
   );
 }

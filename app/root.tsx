@@ -7,7 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import styles from "./tailwind.css";
+import styles from "./styles/app.css";
 import globalStyles from "./global.css";
 import { BackButton } from "./components/common/BackButton/Backbutton";
 
