@@ -36,6 +36,7 @@ type TSet = {
   id: string;
   img: string;
   link: string;
+  live_link: string;
   tracks: string[];
 };
 
@@ -91,10 +92,29 @@ export default function Set() {
           </div>
         </section>
 
-        {/* ANCHOR DEMO */}
+        {/* ANCHOR LIVE VIDEO */}
         <section className="flex flex-col md:flex-row md:gap-8 items-center justify-center">
           <div className="order-2">
             <p className="text-2xl md:text-4xl text-center mb-2">
+              Live Session
+            </p>
+
+            <div>
+              <iframe
+                className="w-full h-full md:w-[560px] md:h-[315px]"
+                src={data.live_link}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        {/* ANCHOR DEMO */}
+        <section className="flex flex-col md:flex-row md:gap-8 items-center justify-center">
+          <div className="order-2">
+            <p className="text-xl md:text-4xl text-center mb-2">
               Spotify Play List
             </p>
 

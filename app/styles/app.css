@@ -791,6 +791,11 @@ video {
   font-family: Barlow-Thin, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -809,11 +814,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -859,6 +859,18 @@ video {
 
   .md\:h-\[315px\] {
     height: 315px;
+  }
+
+  .md\:h-\[515px\] {
+    height: 515px;
+  }
+
+  .md\:h-\[615px\] {
+    height: 615px;
+  }
+
+  .md\:h-\[1015px\] {
+    height: 1015px;
   }
 
   .md\:w-64 {

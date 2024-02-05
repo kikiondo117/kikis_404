@@ -46,7 +46,7 @@ export default function Sets() {
       <section className="flex flex-col gap-4 items-center md:gap-0 md:flex-row justify-center mt-12 flex-wrap">
         {sets_data.map((set) => {
           return (
-            <Link to={`/set/${set.id}`}>
+            <Link key={set.id} to={`/set/${set.id}`}>
               <SetCard key={set.id} img={set.img} id={set.id} date={set.date} />
             </Link>
           );
