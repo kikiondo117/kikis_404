@@ -6,9 +6,11 @@ import {
   redirect,
 } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
+import { FaSpotify } from "react-icons/fa/index.js";
 
 import { Menu } from "~/components/common/Menu/Menu";
 import { SocialMedia } from "~/components/common/SocialMedia/SocialMedia";
+
 import { sets_data } from "~/data/sets";
 
 export const meta: MetaFunction = () => {
@@ -86,6 +88,22 @@ export default function Set() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+        </section>
+
+        {/* ANCHOR DEMO */}
+        <section className="flex flex-col md:flex-row md:gap-8 items-center justify-center">
+          <div className="order-2">
+            <p className="text-4xl text-center mb-2">Spotify</p>
+
+            <div className="flex justify-center">
+              <a
+                href="https://open.spotify.com/playlist/1nQPEU60lopIZbgcgmfHLQ?si=1b3b8fba352f438d"
+                target="_blank"
+              >
+                <FaSpotify className="w-28 h-28 my-8 text-[#1DB954]" />
+              </a>
+            </div>
           </div>
         </section>
       </div>
