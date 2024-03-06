@@ -52,29 +52,6 @@ export default function Sets() {
           );
         })}
       </section>
-
-      {/* ANCHOR DEMO SET MONTH */}
-      <section className=" h-screen flex flex-col gap-4 items-center justify-center">
-        <h2 className="text-center text-4xl md:text-5xl font-barlow-thin">
-          LIVE SESSION
-        </h2>
-
-        <div>
-          <iframe
-            className=" w-full h-full md:w-[560px] md:h-[315px]"
-            src="https://www.youtube.com/embed/cc-w0c13tGI?si=RRwR_j6nDGJEoX3C"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        {/* ANCHOR DEMO SET DATA 27 / 01 / 2024*/}
-        <p className="p-4 mb-12 text-center text-xl md:text-4xl font-barlow-medium">
-          Proximo Set en vivo - Aun definiendo día del mes.
-        </p>
-      </section>
     </main>
   );
 }

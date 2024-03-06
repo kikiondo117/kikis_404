@@ -45,6 +45,17 @@ export function Menu() {
             Contacto
           </Link>
         </li>
+        <li>|</li>
+        <li>
+          <Link
+            onClick={() => {
+              segmentMenuTrack("Events");
+            }}
+            to="/events"
+          >
+            Eventos
+          </Link>
+        </li>
       </ul>
     </nav>
   );
