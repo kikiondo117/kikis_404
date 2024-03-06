@@ -1,7 +1,7 @@
 export const sets_data = [
   {
     id: "enero-2024",
-    link: "https://www.youtube.com/watch?v=cc-w0c13tGI&t=0s",
+    link: "https://www.youtube.com/embed/cc-w0c13tGI?si=09bbstQ4doB1Z3t3",
     live_link: "https://www.youtube.com/embed/oVPX2Y3hDfc?si=5HmwXw6xTbGoj8W-",
     img: "/imgs/sets/ghost_white.png",
     date: "Enero - 27 / 01 / 2024",
@@ -20,8 +20,8 @@ export const sets_data = [
   },
   {
     id: "febrero-2024",
-    link: "https://www.youtube.com/watch?v=hEmAHfC7bQQ",
-    live_link: "https://www.youtube.com/watch?v=-NR35PrrW0U&t=3871s",
+    link: "https://www.youtube.com/embed/hEmAHfC7bQQ?si=ExdD9aAVuEXwnd1b",
+    live_link: "https://www.youtube.com/embed/-NR35PrrW0U?si=dKDhynXk1roqZggd",
     img: "/imgs/sets/ghost.png",
     date: "Febrero - 24 / 02 / 2024",
     tracks: [

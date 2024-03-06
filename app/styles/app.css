@@ -870,28 +870,16 @@ video {
     width: 16rem;
   }
 
+  .md\:w-\[50vw\] {
+    width: 50vw;
+  }
+
   .md\:w-\[560px\] {
     width: 560px;
   }
 
   .md\:w-\[70vw\] {
     width: 70vw;
-  }
-
-  .md\:w-\[80vw\] {
-    width: 80vw;
-  }
-
-  .md\:w-\[100vw\] {
-    width: 100vw;
-  }
-
-  .md\:w-\[800vw\] {
-    width: 800vw;
-  }
-
-  .md\:w-\[50vw\] {
-    width: 50vw;
   }
 
   .md\:flex-row {

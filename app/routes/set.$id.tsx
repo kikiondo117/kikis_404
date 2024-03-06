@@ -83,7 +83,7 @@ export default function Set() {
           <div>
             <iframe
               className=" w-full h-full md:w-[560px] md:h-[315px]"
-              src="https://www.youtube.com/embed/cc-w0c13tGI?si=RRwR_j6nDGJEoX3C"
+              src={data.link}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
