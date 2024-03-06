@@ -28,7 +28,7 @@ export default function Contact() {
       className="container mt-20  mx-auto text-white pb-8"
       style={{ lineHeight: "1.4" }}
     >
-      <div className="mx-auto w-[300px] max-w-xl mt-4 md:mt-8 relative md:w-[80vw]">
+      <div className="mx-auto w-[300px]  mt-4 md:mt-8 relative md:w-[50vw]">
         <Link to="/">
           <video autoPlay loop muted playsInline>
             <source src="/videos/kikis404black.mp4" />
@@ -38,7 +38,7 @@ export default function Contact() {
 
       <Menu />
 
-      <section className="mt-8 px-8">
+      <section className="mt-8 px-8 h-screen flex flex-col justify-center">
         <h2 className="font-barlow-medium text-center text-3xl md:text-4xl">
           ¿Te gustaria aganedar para un evento?
         </h2>
